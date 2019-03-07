@@ -1,0 +1,64 @@
+body, ul, li, a {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 0;
+}
+.wrapper {
+    position: relative;
+    margin: 50px auto;
+    width: 520px;
+    height: 280px;
+    border: 5px solid #ccc;
+    overflow: hidden;
+}
+.wrapper .img-box {
+    position: absolute;
+    left: 0;
+    width: 3120px;
+    height: 280px;
+}
+.wrapper .img-box li {
+    display: inline-block;
+}
+.wrapper .btn a {
+    display: block;
+    width: 50px;
+    height: 40px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(185, 181, 181, 0.5);
+}
+.wrapper .btn .prevBtn {
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+.wrapper .btn .nextBtn {
+    position: absolute;
+    right: 0;
+    top: 120px;
+}
+.wrapper .dot {
+    position: absolute;
+    bottom: 10px;
+    left: 222px;
+    width: 76px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: rgba(75, 73, 73, 0.5);
+}
+.wrapper .dot ul li {
+    display: inline-block;
+    margin: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+.wrapper .dot ul .active {
+    background-color: orangered;
+}
